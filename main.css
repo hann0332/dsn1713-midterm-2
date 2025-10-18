@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
+
+/* Set custom variables here */
+
+:root {
+  --bs-primary: #2e483a;
+  --bs-primary-rgb:46, 72, 58;
+
+  --bs-light: #f6f3ed;
+  --bs-light-rgb:246, 243, 237;
+
+  --bs-secondary: #bad6c8;
+  --bs-secondary-rgb: 139, 185, 161;
+}
+
+.accordion-button {
+--bs-accordion-active-bg: var(--bs-secondary);
+--bs-accordion-active-color: var(--bs-primary);
+--bs-accordion-btn-color: var(--bs-primary);
+--bs-accordion-btn-focus-box-shadow: var(--bs-secondary)
+}
+/* I know it wasn't necessary but I changed the colors for fun anyway sorryyy*/
+
+
+
+.btn-primary{
+  --bs-btn-color: var(--bs-light);
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--primary);
+
+  --bs-btn-hover-color: var(--primary);
+  --bs-btn-hover-bg: var(--bs-light);
+  --bs-btn-hover-border-color: var(--light);
+}
+
+
+.navbar-brand {
+  color: var(--bs-light);
+}
+
+body {
+  font-family: "Sarala", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+}
+
+#hero {
+  height: 800px;
+  background-color: #E4E6DB;
+  background-image: url(../images/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero .d-flex {
+  height: 800px;
+}
+
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#cta .d-flex {
+  height: 400px;
+}
+
+section:not(#hero):not(#cta){
+  padding: 60px 0;
+}
+
+@media(min-width: 993px){
+  section:not(#hero):not(#cta){
+    padding: 100px 0;
+  }
+}
